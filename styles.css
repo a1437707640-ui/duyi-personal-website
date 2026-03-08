@@ -115,12 +115,43 @@ p {
   min-height: 3rem;
   display: flex;
   align-items: center;
+  gap: 0.7rem;
   padding: 0 1.1rem;
   border-radius: 999px;
   border: 1px solid rgba(230, 232, 238, 0.95);
   background: rgba(255, 255, 255, 0.86);
+}
+
+.search-icon {
   color: #9ca2af;
+  font-size: 1rem;
+}
+
+.search-shell input {
+  width: 100%;
+  min-width: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: var(--text);
+  font: inherit;
   font-weight: 600;
+}
+
+.search-shell input::placeholder {
+  color: #9ca2af;
+}
+
+.search-reset {
+  padding: 0.45rem 0.7rem;
+  border: 0;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: #d77736;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 800;
 }
 
 .topbar-actions {
@@ -221,18 +252,34 @@ p {
 }
 
 .topic-list li {
+  display: block;
+}
+
+.topic-button {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 0.6rem;
   padding: 0.7rem 0.85rem;
+  border: 0;
   border-radius: 16px;
   background: rgba(244, 246, 249, 0.95);
   color: var(--muted);
+  cursor: pointer;
+  font: inherit;
   font-weight: 700;
+  text-align: left;
+  transition: background-color 180ms ease, color 180ms ease, transform 180ms ease;
 }
 
-.topic-list b {
+.topic-button:hover {
+  background: var(--brand-soft);
+  color: #14805f;
+  transform: translateY(-1px);
+}
+
+.topic-button b {
   min-width: 2rem;
   text-align: center;
   padding: 0.25rem 0.5rem;
@@ -319,10 +366,20 @@ p {
 
 .toolbar-pill {
   padding: 0.65rem 0.9rem;
+  border: 0;
   border-radius: 999px;
   background: rgba(244, 246, 249, 0.95);
   color: var(--muted);
+  cursor: pointer;
+  font: inherit;
   font-weight: 700;
+  transition: background-color 180ms ease, color 180ms ease, transform 180ms ease;
+}
+
+.toolbar-pill:hover {
+  background: var(--accent-soft);
+  color: #d77736;
+  transform: translateY(-1px);
 }
 
 .filter-bar {
@@ -381,6 +438,13 @@ p {
   border-radius: 18px;
   background: rgba(247, 248, 251, 0.96);
   border: 1px solid var(--line);
+  transition: border-color 180ms ease, transform 180ms ease, box-shadow 180ms ease;
+}
+
+.pin-row:hover {
+  border-color: rgba(39, 180, 139, 0.28);
+  box-shadow: 0 16px 35px rgba(31, 36, 48, 0.08);
+  transform: translateY(-1px);
 }
 
 .pin-row strong {
@@ -650,7 +714,10 @@ p {
 
   .js-ready .reveal,
   .sidebar-link,
-  .filter-chip {
+  .filter-chip,
+  .topic-button,
+  .toolbar-pill,
+  .pin-row {
     transition: none;
     transform: none;
   }

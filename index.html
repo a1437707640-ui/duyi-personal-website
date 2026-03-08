@@ -23,9 +23,18 @@
           </span>
         </a>
 
-        <div class="search-shell" aria-hidden="true">
-          搜索我的经历、项目、文章与实验主题
-        </div>
+        <label class="search-shell" for="site-search">
+          <span class="search-icon" aria-hidden="true">⌕</span>
+          <input
+            id="site-search"
+            type="search"
+            placeholder="搜索我的经历、项目、文章与实验主题"
+            aria-label="搜索我的经历、项目、文章与实验主题"
+          />
+          <button class="search-reset" id="search-reset" type="button" hidden>
+            清空
+          </button>
+        </label>
 
         <div class="topbar-actions">
           <a
@@ -59,11 +68,31 @@
           <section class="panel reveal">
             <p class="panel-label">研究方向</p>
             <ul class="topic-list">
-              <li><span>AI 一人公司</span><b>01</b></li>
-              <li><span>内容产品化</span><b>02</b></li>
-              <li><span>公众号增长实验</span><b>03</b></li>
-              <li><span>小报童冷启动</span><b>04</b></li>
-              <li><span>OpenClaw 工作流</span><b>05</b></li>
+              <li>
+                <button class="topic-button" data-topic-query="AI 一人公司" data-scroll-target="#projects" type="button">
+                  <span>AI 一人公司</span><b>01</b>
+                </button>
+              </li>
+              <li>
+                <button class="topic-button" data-topic-query="产品化" data-scroll-target="#projects" type="button">
+                  <span>内容产品化</span><b>02</b>
+                </button>
+              </li>
+              <li>
+                <button class="topic-button" data-topic-query="公众号" data-scroll-target="#projects" type="button">
+                  <span>公众号增长实验</span><b>03</b>
+                </button>
+              </li>
+              <li>
+                <button class="topic-button" data-topic-query="小报童" data-scroll-target="#projects" type="button">
+                  <span>小报童冷启动</span><b>04</b>
+                </button>
+              </li>
+              <li>
+                <button class="topic-button" data-topic-query="OpenClaw" data-scroll-target="#projects" type="button">
+                  <span>OpenClaw 工作流</span><b>05</b>
+                </button>
+              </li>
             </ul>
           </section>
 
@@ -100,9 +129,15 @@
             </div>
 
             <div class="composer-toolbar">
-              <span class="toolbar-pill">长期主义</span>
-              <span class="toolbar-pill">假设 → 验证 → 复盘</span>
-              <span class="toolbar-pill">会构建产品，做营销实验</span>
+              <button class="toolbar-pill" data-quick-query="长期主义" data-scroll-target="#writing" type="button">
+                长期主义
+              </button>
+              <button class="toolbar-pill" data-quick-query="验证" data-scroll-target="#projects" type="button">
+                假设 → 验证 → 复盘
+              </button>
+              <button class="toolbar-pill" data-quick-query="产品" data-scroll-target="#projects" type="button">
+                会构建产品，做营销实验
+              </button>
             </div>
           </section>
 
