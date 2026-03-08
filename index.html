@@ -5,222 +5,474 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="杜一的个人网站：7年新媒体经验，做过500万粉丝矩阵与企业账号，持续研究 AI、自媒体、一人公司与产品化实验。"
+      content="杜一的个人简历网站：7年新媒体经验，做过500万粉丝矩阵和企业账号，持续研究 AI、自媒体、一人公司与产品化实验。"
     />
-    <title>杜一 | AI × 自媒体 × 一人公司</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Noto+Serif+SC:wght@400;500;700&amp;display=swap"
-      rel="stylesheet"
-    />
+    <meta name="theme-color" content="#f4f5f7" />
+    <title>杜一 | 个人简历网站</title>
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <div class="page-shell">
-      <div class="ambient ambient-one"></div>
-      <div class="ambient ambient-two"></div>
-      <header class="site-header">
-        <a class="brand" href="#top">
+    <div class="site-shell">
+      <header class="topbar">
+        <a class="brand" href="#overview">
           <span class="brand-mark">D</span>
-          <span class="brand-text">杜一</span>
+          <span class="brand-copy">
+            <strong>杜一的人生实验室</strong>
+            <small>Resume · Feed · Projects</small>
+          </span>
         </a>
-        <nav class="site-nav" aria-label="主导航">
-          <a href="#about">关于</a>
-          <a href="#work">作品</a>
-          <a href="#writing">写作</a>
-          <a href="#contact">联系</a>
-        </nav>
+
+        <div class="search-shell" aria-hidden="true">
+          搜索我的经历、项目、文章与实验主题
+        </div>
+
+        <div class="topbar-actions">
+          <a
+            href="https://a1437707640-ui.github.io/duyi-personal-website/"
+            target="_blank"
+            rel="noreferrer"
+            >在线站点</a
+          >
+          <a
+            href="https://github.com/a1437707640-ui/duyi-personal-website"
+            target="_blank"
+            rel="noreferrer"
+            >GitHub</a
+          >
+        </div>
       </header>
 
-      <main id="top">
-        <section class="hero section">
-          <div class="hero-copy reveal">
-            <p class="eyebrow">AI × 自媒体 × 一人公司</p>
-            <h1>
-              我研究如何把经验、内容和 AI
-              <span>做成能持续复利的一人公司系统。</span>
-            </h1>
-            <p class="hero-text">
-              我是杜一。做过 K12 矩阵、B 端企业账号、上市公司达人会员运营，也做过新媒体求职陪跑。现在我更关心一件事：普通人如何借助 AI、自媒体和持续实验，把经验变成产品。
-            </p>
-            <div class="hero-actions">
-              <a class="button button-primary" href="#work">查看项目</a>
-              <a class="button button-secondary" href="#writing">读文章</a>
-            </div>
-          </div>
+      <div class="workspace">
+        <aside class="sidebar sidebar-left">
+          <section class="panel reveal">
+            <p class="panel-label">个人导航</p>
+            <nav class="side-nav" aria-label="站点导航">
+              <a class="sidebar-link is-active" href="#overview">总览</a>
+              <a class="sidebar-link" href="#experience">职业经历</a>
+              <a class="sidebar-link" href="#projects">项目实验</a>
+              <a class="sidebar-link" href="#writing">代表文章</a>
+              <a class="sidebar-link" href="#contact">联系入口</a>
+            </nav>
+          </section>
 
-          <div class="hero-panel reveal">
-            <div class="status-card tilt-card">
-              <p class="card-label">Current focus</p>
-              <div class="focus-line">
-                <span id="focus-text">OpenClaw 内容工厂</span>
-                <span class="pulse-dot" aria-hidden="true"></span>
+          <section class="panel reveal">
+            <p class="panel-label">研究方向</p>
+            <ul class="topic-list">
+              <li><span>AI 一人公司</span><b>01</b></li>
+              <li><span>内容产品化</span><b>02</b></li>
+              <li><span>公众号增长实验</span><b>03</b></li>
+              <li><span>小报童冷启动</span><b>04</b></li>
+              <li><span>OpenClaw 工作流</span><b>05</b></li>
+            </ul>
+          </section>
+
+          <section class="panel reveal">
+            <p class="panel-label">关键节点</p>
+            <div class="mini-timeline">
+              <article>
+                <strong>2019</strong>
+                <p>进入新媒体行业，参与 K12 矩阵账号项目。</p>
+              </article>
+              <article>
+                <strong>2024</strong>
+                <p>做过课程和陪跑，也开始认真思考一人公司的可能性。</p>
+              </article>
+              <article>
+                <strong>2026</strong>
+                <p>公众号、小报童、OpenClaw 三条线同时验证。</p>
+              </article>
+            </div>
+          </section>
+        </aside>
+
+        <main class="main-feed">
+          <section class="panel composer reveal" id="overview">
+            <div class="composer-head">
+              <div class="avatar avatar-primary">杜</div>
+              <div class="composer-copy">
+                <p class="eyebrow">研究：普通人 × AI × 一人公司 × 自媒体</p>
+                <h1>这是我的公开简历，也是我的实验流。</h1>
+                <p>
+                  我把桌面上的公众号文章、小报童实验和过去的职业经历，整理成一个更像内容主页的个人网站。它不是一张静态名片，而是我如何工作、如何验证、如何持续出手的公开记录。
+                </p>
               </div>
-              <p class="card-note">
-                研究 AI × 自媒体 × 一人公司，持续构建产品并做营销实验。
-              </p>
             </div>
-            <div class="metrics-grid">
-              <article class="metric tilt-card">
-                <span class="metric-value">7年</span>
-                <span class="metric-label">新媒体与培训经验</span>
-              </article>
-              <article class="metric tilt-card">
-                <span class="metric-value">500万+</span>
-                <span class="metric-label">参与操盘账号体量</span>
-              </article>
-              <article class="metric tilt-card">
-                <span class="metric-value">近100</span>
-                <span class="metric-label">课程陪跑付费用户</span>
-              </article>
+
+            <div class="composer-toolbar">
+              <span class="toolbar-pill">长期主义</span>
+              <span class="toolbar-pill">假设 → 验证 → 复盘</span>
+              <span class="toolbar-pill">会构建产品，做营销实验</span>
             </div>
-          </div>
-        </section>
+          </section>
 
-        <section class="section section-grid" id="about">
-          <div class="section-heading reveal">
-            <p class="section-tag">About</p>
-            <h2>我的工作主线，是把内容经验做成可复用的产品与系统。</h2>
-          </div>
-          <div class="about-layout">
-            <article class="about-card reveal">
-              <p>
-                2019 年我进入新媒体行业，先后做过接近 200 万粉丝的 K12 矩阵账号、150 万粉丝的 B 端企业账号，也在上市公司做过达人会员运营。
-              </p>
-              <p>
-                后来我把这些经验带到自媒体和一人公司里，做过新媒体求职陪跑，也经历过停掉业务、重做定位、重新验证。现在我的定位更清楚了：研究 AI × 自媒体 × 一人公司的创作者，会构建产品，做营销实验。
-              </p>
-            </article>
+          <section class="panel filter-bar reveal">
+            <button class="filter-chip is-active" data-filter-button data-filter="all" type="button">
+              最新
+            </button>
+            <button class="filter-chip" data-filter-button data-filter="featured" type="button">
+              精华
+            </button>
+            <button class="filter-chip" data-filter-button data-filter="project" type="button">
+              项目
+            </button>
+            <button class="filter-chip" data-filter-button data-filter="article" type="button">
+              文章
+            </button>
+            <button class="filter-chip" data-filter-button data-filter="product" type="button">
+              产品
+            </button>
+          </section>
 
-            <div class="timeline reveal">
-              <article>
-                <span class="timeline-year">01</span>
-                <div>
-                  <h3>职业经历</h3>
-                  <p>从矩阵账号、企业账号到上市公司运营，长期在内容、增长和用户之间做连接。</p>
-                </div>
-              </article>
-              <article>
-                <span class="timeline-year">02</span>
-                <div>
-                  <h3>商业闭环</h3>
-                  <p>做过求职课程和陪跑，10 天跑通流程，3 个月近 100 个付费用户，最高月入接近 2 万。</p>
-                </div>
-              </article>
-              <article>
-                <span class="timeline-year">03</span>
-                <div>
-                  <h3>当前方向</h3>
-                  <p>长期主义，假设、验证、复盘、迭代。用公众号、小报童和 AI 工具链继续验证一人公司的可能性。</p>
-                </div>
-              </article>
+          <section class="panel pinned-board reveal">
+            <div class="panel-heading">
+              <div>
+                <p class="panel-label">置顶内容</p>
+                <h2>最能代表我方法论和当前阶段的三条内容。</h2>
+              </div>
             </div>
-          </div>
-        </section>
 
-        <section class="section" id="work">
-          <div class="section-heading reveal">
-            <p class="section-tag">Selected Work</p>
-            <h2>我做过的项目，大多围绕内容、产品化和验证。</h2>
-          </div>
-          <div class="cards three-up">
-            <article class="project-card reveal">
-              <p class="project-index">01</p>
-              <h3>新媒体求职陪跑闭环</h3>
-              <p>
-                基于六七年职场经验和企业培训经验，为刚毕业用户提供职业转型课程与陪跑。10 天跑通流程，3 个月做到近 100 个付费用户，最高月入接近 2 万。
-              </p>
-              <ul class="meta-list">
-                <li>课程设计</li>
-                <li>陪跑交付</li>
-                <li>产品边界</li>
-              </ul>
-            </article>
-
-            <article class="project-card reveal">
-              <p class="project-index">02</p>
-              <h3>公众号 × 小报童实验日志</h3>
-              <p>
-                2026 年 1 月连续写 16 篇公众号和 6 篇复盘，把粉丝从 50 做到 2228，获得 310.91 元收入；小报童上线 13 天做到 72 个付费用户、700+ 收入，验证了内容驱动的低价产品化路径。
-              </p>
-              <ul class="meta-list">
-                <li>内容验证</li>
-                <li>增长实验</li>
-                <li>低价产品</li>
-              </ul>
-            </article>
-
-            <article class="project-card reveal">
-              <p class="project-index">03</p>
-              <h3>OpenClaw 五数字员工内容工厂</h3>
-              <p>
-                用 OpenClaw 搭建主编、搜索、写作、画家、发布五个数字员工，把一篇内容的产出从原来的 3 到 5 小时，压缩成 5 分钟录音加自动化流程，验证 AI 工具链对一人公司的放大价值。
-              </p>
-              <ul class="meta-list">
-                <li>AI 工作流</li>
-                <li>自动化发布</li>
-                <li>内容工厂</li>
-              </ul>
-            </article>
-          </div>
-        </section>
-
-        <section class="section" id="writing">
-          <div class="section-heading reveal">
-            <p class="section-tag">Writing</p>
-            <h2>我写作，不是为了显得懂，而是为了记录实验和形成方法。</h2>
-          </div>
-          <div class="cards two-up">
-            <article class="essay-card reveal">
-              <p class="essay-type">公众号文章</p>
-              <h3>三个月一人公司月入近 2 万：方法蠢到我不好意思说</h3>
-              <p>
-                从抑郁、日更、直播到商业闭环，这篇文章基本解释了我怎么理解“系统”、行动和反馈，也解释了为什么我后来会把重点放到实验而不是观点上。
-              </p>
+            <div class="pin-list">
               <a
+                class="pin-row"
+                href="https://mp.weixin.qq.com/s/i9m7jT6T8XKuOSrhxk06pw"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span class="pin-badge">置顶</span>
+                <div>
+                  <strong>《我做了 5 个月一人公司，月入两万后停掉的真实原因》</strong>
+                  <p>阅读 29700+，涨粉 311，转发 1190。这篇文章第一次把我的失败、停掉业务和重新定位写清楚。</p>
+                </div>
+              </a>
+
+              <a
+                class="pin-row"
                 href="https://mp.weixin.qq.com/s/xvyIJKt2i-87bAT9lMDu5A"
                 target="_blank"
                 rel="noreferrer"
-                >继续阅读</a
               >
-            </article>
+                <span class="pin-badge">置顶</span>
+                <div>
+                  <strong>《三个月一人公司月入近 2 万：方法蠢到我不好意思说》</strong>
+                  <p>阅读 65000，涨粉 1671。它把系统、行动、反馈和商业闭环之间的关系说得最完整。</p>
+                </div>
+              </a>
 
-            <article class="essay-card reveal">
-              <p class="essay-type">公众号文章</p>
-              <h3>2026 年，All in AI：我用 OpenClaw 搭了一套 5 个员工的一人公司内容工厂</h3>
-              <p>
-                这是我最近最重要的一次工具链实验。它不是单纯聊模型，而是把 AI 放进真实的内容流程里，看看普通创作者到底能不能因此被放大。
-              </p>
               <a
+                class="pin-row"
                 href="https://mp.weixin.qq.com/s/NoUq1mS4khdOkOYky2TxLg"
                 target="_blank"
                 rel="noreferrer"
-                >继续阅读</a
+              >
+                <span class="pin-badge">置顶</span>
+                <div>
+                  <strong>《2026 年，All in AI：我用 OpenClaw 搭了一套 5 个员工的一人公司内容工厂》</strong>
+                  <p>把内容产出从 3 到 5 小时压缩到 5 分钟录音，是我最近最重要的工具链实验。</p>
+                </div>
+              </a>
+            </div>
+          </section>
+
+          <section class="feed-group reveal" id="experience">
+            <div class="group-heading">
+              <p class="panel-label">职业经历</p>
+              <h2>我做过什么，靠什么拿结果。</h2>
+            </div>
+
+            <article class="panel feed-card" data-track="featured project">
+              <div class="feed-meta">
+                <span class="feed-type">职业主线</span>
+                <span>2019 - 至今</span>
+              </div>
+              <h3>从 500 万粉丝矩阵到上市公司运营，我一直在内容与增长之间工作。</h3>
+              <p>
+                2019 年进入新媒体行业，第一段工作参与做出接近 200 万粉丝的 K12 矩阵账号；第二段工作与同事做出 150 万粉丝的 B 端企业账号，并继续复制出多个几十万体量账号；第三段在上市公司做达人会员运营，第一次明确看见“自媒体做一人公司”这件事在商业上是成立的。
+              </p>
+              <div class="feed-tags">
+                <span>K12 矩阵账号</span>
+                <span>B 端企业号</span>
+                <span>上市公司运营</span>
+                <span>课程能力</span>
+              </div>
+            </article>
+
+            <article class="panel feed-card" data-track="project">
+              <div class="feed-meta">
+                <span class="feed-type">商业闭环</span>
+                <span>一人公司阶段</span>
+              </div>
+              <h3>我做过求职陪跑闭环，但后来意识到“做成”和“说清楚”不是一回事。</h3>
+              <p>
+                基于六七年职场经验和几年的企业培训经验，我给刚毕业用户提供职业转型课程与陪跑。10 天跑通业务流程，20 个付费用户，3 个月近 100 个付费用户，最高月入接近 2 万。但当别人问“你是怎么做的”时，我答不上来，这促使我把注意力转向方法沉淀与产品化系统。
+              </p>
+              <div class="feed-stats">
+                <span><strong>10天</strong> 跑通流程</span>
+                <span><strong>20</strong> 首批付费</span>
+                <span><strong>近100</strong> 总付费用户</span>
+              </div>
+            </article>
+          </section>
+
+          <section class="feed-group reveal" id="projects">
+            <div class="group-heading">
+              <p class="panel-label">项目实验</p>
+              <h2>过去几个月，我把“个人经验”拆成了几条可以验证的产品线。</h2>
+            </div>
+
+            <article class="panel feed-card" data-track="featured project article">
+              <div class="feed-meta">
+                <span class="feed-type">公众号实验</span>
+                <span>2026 / 01</span>
+              </div>
+              <h3>16 篇公众号 + 6 篇复盘，把粉丝从 50 做到 2228。</h3>
+              <p>
+                我把停掉旧业务后的迷茫、复盘和重新验证写成一篇篇内容，26 天内完成 16 篇公众号和 6 篇复盘，粉丝从 50 增长到 2228，直接收入 310.91 元。这次实验让我确认，真实经历、阶段性结果和可复用方法，比空洞观点更能建立信任。
+              </p>
+              <div class="feed-stats">
+                <span><strong>16+6</strong> 内容产出</span>
+                <span><strong>50 → 2228</strong> 粉丝增长</span>
+                <span><strong>¥310.91</strong> 直接收入</span>
+              </div>
+              <a
+                class="feed-link"
+                href="https://mp.weixin.qq.com/s/i9m7jT6T8XKuOSrhxk06pw"
+                target="_blank"
+                rel="noreferrer"
+                >查看代表文章</a
               >
             </article>
-          </div>
-        </section>
 
-        <section class="section contact-section" id="contact">
-          <div class="contact-panel reveal">
-            <p class="section-tag">Contact</p>
-            <h2>如果你也在做 AI、自媒体、一人公司，欢迎和我交流。</h2>
-            <p>
-              我现在主要关心的主题，是 AI 内容系统、产品化路径、增长实验和一人公司的长期复利。对外入口先以公众号和小报童为主，后续可以再补充微信或邮件。
-            </p>
-            <div class="contact-links">
-              <span>公众号：杜一的人生实验室</span>
-              <span>小报童：从运气到系统</span>
-              <span>方向：AI × 自媒体 × 一人公司</span>
+            <article class="panel feed-card" data-track="featured product">
+              <div class="feed-meta">
+                <span class="feed-type">小报童</span>
+                <span>2026 / 01 - 02</span>
+              </div>
+              <h3>小报童《从运气到系统》13 天 72 个付费用户，验证了低价实验产品可行。</h3>
+              <p>
+                我把“系统构建日志、AI 产品化日志、自媒体营销日志”做成一个买断制实验手册，定价 10.24 元。首日 18 人加入，13 天累计 72 个付费用户，收入 700+。主要流量来自公众号、胡子哥社群、朋友圈、直播和 B 站，验证了内容驱动的产品冷启动路径。
+              </p>
+              <div class="feed-stats">
+                <span><strong>72</strong> 付费用户</span>
+                <span><strong>¥700+</strong> 冷启动收入</span>
+                <span><strong>5</strong> 个营销渠道</span>
+              </div>
+            </article>
+
+            <article class="panel feed-card" data-track="featured project article">
+              <div class="feed-meta">
+                <span class="feed-type">AI 工作流</span>
+                <span>2026 / 03</span>
+              </div>
+              <h3>我用 OpenClaw 搭了一套 5 个数字员工的内容工厂。</h3>
+              <p>
+                这套工作流里有主编、搜索、写作、画家和发布五个角色。它把我一篇内容从原来 3 到 5 小时的产出时间，压到 5 分钟录音 + 自动化执行，真正把 AI 从“聊天工具”推进到“执行工具链”。
+              </p>
+              <div class="feed-stats">
+                <span><strong>5</strong> 个数字员工</span>
+                <span><strong>5分钟</strong> 录音起稿</span>
+                <span><strong>3-5小时 → 自动化</strong> 内容流程</span>
+              </div>
+              <a
+                class="feed-link"
+                href="https://mp.weixin.qq.com/s/NoUq1mS4khdOkOYky2TxLg"
+                target="_blank"
+                rel="noreferrer"
+                >查看完整记录</a
+              >
+            </article>
+
+            <article class="panel feed-card" data-track="project product article">
+              <div class="feed-meta">
+                <span class="feed-type">内容工作流</span>
+                <span>一鱼多吃</span>
+              </div>
+              <h3>一次思考，多个出口：把长文、短视频、社群内容串成一条线。</h3>
+              <p>
+                我不想为流量委屈自己，于是把“一份思考，多个出口”作为内容工作流：先形成长文，再压缩成短视频、社群分享和产品试用装。它不是流量技巧，而是把内容复利做成系统。
+              </p>
+              <a
+                class="feed-link"
+                href="https://mp.weixin.qq.com/s/sfV489cPSneJwArecllS1g"
+                target="_blank"
+                rel="noreferrer"
+                >查看工作流文章</a
+              >
+            </article>
+          </section>
+
+          <section class="feed-group reveal" id="writing">
+            <div class="group-heading">
+              <p class="panel-label">代表文章</p>
+              <h2>这些文章最能代表我的视角、阶段和方法。</h2>
             </div>
-          </div>
-        </section>
-      </main>
+
+            <article class="panel feed-card" data-track="featured article">
+              <div class="feed-meta">
+                <span class="feed-type">公众号文章</span>
+                <span>2026 / 01 / 17</span>
+              </div>
+              <h3>三个月一人公司月入近 2 万：方法蠢到我不好意思说</h3>
+              <p>
+                从抑郁、日更、直播到商业闭环，这篇文章把“系统不是复杂的东西，而是一套能在低状态下也持续出手的流程”讲得最完整。
+              </p>
+              <a
+                class="feed-link"
+                href="https://mp.weixin.qq.com/s/xvyIJKt2i-87bAT9lMDu5A"
+                target="_blank"
+                rel="noreferrer"
+                >阅读全文</a
+              >
+            </article>
+
+            <article class="panel feed-card" data-track="article">
+              <div class="feed-meta">
+                <span class="feed-type">公众号文章</span>
+                <span>2026 / 01 / 08</span>
+              </div>
+              <h3>我做了 5 个月一人公司，月入两万后停掉的真实原因</h3>
+              <p>
+                这篇文章首次把我为什么停掉旧业务、如何理解一人公司的边界，以及为什么我要重新开始写内容说清楚。
+              </p>
+              <a
+                class="feed-link"
+                href="https://mp.weixin.qq.com/s/i9m7jT6T8XKuOSrhxk06pw"
+                target="_blank"
+                rel="noreferrer"
+                >阅读全文</a
+              >
+            </article>
+
+            <article class="panel feed-card" data-track="article">
+              <div class="feed-meta">
+                <span class="feed-type">公众号文章</span>
+                <span>7年方法论</span>
+              </div>
+              <h3>7 年新媒体人自曝：1 条评论拼出 25 条内容的秘密，就这个 1×5×5 公式</h3>
+              <p>
+                我如何从评论区、用户问题和真实场景里反向提取选题，形成持续写作与持续表达的系统，这篇写得最具体。
+              </p>
+              <a
+                class="feed-link"
+                href="https://mp.weixin.qq.com/s/Zw93iHwdf8JWBwF7Q0izQw"
+                target="_blank"
+                rel="noreferrer"
+                >阅读全文</a
+              >
+            </article>
+
+            <article class="panel feed-card" data-track="article product">
+              <div class="feed-meta">
+                <span class="feed-type">公众号文章</span>
+                <span>产品化信号</span>
+              </div>
+              <h3>点 100 次收藏，不如试一次，让纳瓦尔、芒格当你的教练</h3>
+              <p>
+                这篇文章背后真正重要的不是提示词本身，而是它带来了第一次明确的付费信号，让我确认“价值可以被产品化”。
+              </p>
+              <a
+                class="feed-link"
+                href="https://mp.weixin.qq.com/s/RF3PVa05q0oej2JQ-hs0RA"
+                target="_blank"
+                rel="noreferrer"
+                >阅读全文</a
+              >
+            </article>
+          </section>
+        </main>
+
+        <aside class="sidebar sidebar-right">
+          <section class="panel profile-card reveal">
+            <div class="profile-cover">
+              <div class="cover-glow"></div>
+              <div class="cover-avatar">杜一</div>
+            </div>
+
+            <div class="profile-body">
+              <p class="profile-meta">研究：普通人 × AI × 一人公司 × 自媒体</p>
+              <h2>杜一</h2>
+              <p class="profile-summary">
+                还没答案，但每天都在试。我更在意的不是“讲懂”，而是把经验、内容和工具链真的做成可复用的系统。
+              </p>
+
+              <div class="profile-tags">
+                <span>长期主义</span>
+                <span>构建产品</span>
+                <span>营销实验</span>
+                <span>内容复利</span>
+              </div>
+            </div>
+          </section>
+
+          <section class="panel stats-card reveal">
+            <p class="panel-label">关键数字</p>
+            <div class="stats-grid">
+              <article>
+                <strong>7年</strong>
+                <span>新媒体经验</span>
+              </article>
+              <article>
+                <strong>500万+</strong>
+                <span>账号体量</span>
+              </article>
+              <article>
+                <strong>近100</strong>
+                <span>课程付费用户</span>
+              </article>
+              <article>
+                <strong>2228</strong>
+                <span>26天公号涨粉</span>
+              </article>
+              <article>
+                <strong>72</strong>
+                <span>小报童付费</span>
+              </article>
+              <article>
+                <strong>5</strong>
+                <span>数字员工角色</span>
+              </article>
+            </div>
+          </section>
+
+          <section class="panel values-card reveal">
+            <p class="panel-label">我的方法</p>
+            <div class="value-item">
+              <strong>我是谁</strong>
+              <p>研究 AI × 自媒体 × 一人公司的创作者，会构建产品，做营销实验。</p>
+            </div>
+            <div class="value-item">
+              <strong>我信什么</strong>
+              <p>长期主义。假设、验证、复盘、迭代，唯有实验才能取得结果。</p>
+            </div>
+            <div class="value-item">
+              <strong>我反对什么</strong>
+              <p>短视。比起一夜暴富，我更在意可复用、能沉淀、能长期放大的系统。</p>
+            </div>
+          </section>
+
+          <section class="panel links-card reveal" id="contact">
+            <p class="panel-label">联系与入口</p>
+            <a
+              href="https://mp.weixin.qq.com/s/xvyIJKt2i-87bAT9lMDu5A"
+              target="_blank"
+              rel="noreferrer"
+              >公众号：杜一的人生实验室</a
+            >
+            <a href="https://github.com/a1437707640-ui/duyi-personal-website" target="_blank" rel="noreferrer"
+              >GitHub 仓库</a
+            >
+            <a
+              href="https://a1437707640-ui.github.io/duyi-personal-website/"
+              target="_blank"
+              rel="noreferrer"
+              >网站在线地址</a
+            >
+          </section>
+        </aside>
+      </div>
 
       <footer class="site-footer">
-        <p>© <span id="year"></span> 杜一. Built with HTML, CSS and JS.</p>
+        <p>© <span id="year"></span> 杜一 · Resume feed inspired by community products.</p>
       </footer>
     </div>
 
