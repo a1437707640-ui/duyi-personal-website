@@ -66,6 +66,68 @@ p {
   position: relative;
 }
 
+.site-shell-minimal,
+.workspace-single {
+  width: min(calc(100% - 2rem), 980px);
+  margin: 0 auto;
+}
+
+.workspace-single {
+  display: block;
+  padding: 3rem 0 4rem;
+}
+
+.workspace-single .main-feed {
+  width: 100%;
+}
+
+.workspace-single .composer,
+.workspace-single .feed-card {
+  border-radius: 32px;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.workspace-single .composer {
+  padding: clamp(2rem, 6vw, 5rem);
+}
+
+.workspace-single .composer-head {
+  grid-template-columns: 100px minmax(0, 1fr);
+  align-items: start;
+}
+
+.workspace-single .composer-copy h1 {
+  max-width: 10ch;
+  font-size: clamp(3rem, 9vw, 6.6rem);
+  line-height: 0.95;
+  letter-spacing: -0.06em;
+}
+
+.workspace-single .composer-copy p:last-child {
+  max-width: 34rem;
+  margin-top: 1.2rem;
+  font-size: 1.08rem;
+  line-height: 1.9;
+}
+
+.workspace-single .feed-group {
+  margin-top: 1.2rem;
+}
+
+.workspace-single .group-heading {
+  margin-bottom: 1rem;
+}
+
+.workspace-single .group-heading h2 {
+  font-size: clamp(1.5rem, 4vw, 2.2rem);
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+}
+
+.workspace-single .feed-card {
+  padding: 1.6rem;
+}
+
 .topbar {
   position: sticky;
   top: 0;
@@ -756,6 +818,20 @@ p {
 }
 
 @media (max-width: 760px) {
+  .workspace-single {
+    width: min(calc(100% - 1rem), 980px);
+    padding-top: 1rem;
+  }
+
+  .workspace-single .composer-head {
+    grid-template-columns: 1fr;
+  }
+
+  .workspace-single .composer-copy h1 {
+    max-width: none;
+    font-size: 3.2rem;
+  }
+
   .topbar {
     grid-template-columns: 1fr;
   }
