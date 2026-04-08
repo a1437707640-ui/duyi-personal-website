@@ -16,52 +16,38 @@
     <div class="site-shell">
       <header class="topbar">
         <a class="brand" href="./index.html">
-          <span class="brand-mark">D</span>
-          <span class="brand-copy">
-            <strong>杜一</strong>
-            <small>Personal Blog</small>
-          </span>
+          <strong>杜一</strong>
         </a>
+
+        <nav class="topbar-nav" aria-label="主导航">
+          <a href="#articles">文章</a>
+        </nav>
       </header>
 
-      <main class="workspace workspace-single">
-        <section class="main-feed">
-          <section class="panel composer reveal" id="overview">
-              <div class="composer-head">
-                <div class="avatar">杜</div>
-                <div class="composer-copy">
-                  <p class="eyebrow">个人博客</p>
-                  <h1>写我真正做过、试过、跑通过的东西。</h1>
-                  <p>
-                    我是杜一，关注 AI 工具、内容工作流和个人系统搭建。这里放公开写给读者的文章，不放搭建过程和维护说明。
-                  </p>
-                </div>
-              </div>
-            </section>
+      <main class="home-main">
+        <section class="hero">
+          <p class="hero-kicker">个人博客</p>
+          <h1>杜一</h1>
+          <p class="hero-copy">
+            写 AI 工具、内容工作流和个人系统搭建。只放公开给读者看的内容。
+          </p>
+          <a class="hero-link" href="./articles/claude-code-vps-residential-ip.html">读文章</a>
+        </section>
 
-          <section class="feed-group reveal" id="writing">
-            <div class="group-heading">
-              <p class="panel-label">文章</p>
-              <h2>从这一篇开始读</h2>
-            </div>
+        <section class="article-list" id="articles">
+          <div class="section-head">
+            <p>最新文章</p>
+          </div>
 
-            <article class="panel feed-card" data-track="featured article">
-              <div class="feed-meta">
-                <span class="feed-type">站内文章</span>
-                <span>2026 / 04</span>
-              </div>
-              <h3>用 Claude Code 一键配置 VPS + 住宅 IP</h3>
-              <p>
-                把 VPS、住宅 IP、订阅服务和客户端导入串成一条自动化流程，适合做成可复制的实操手册。
-              </p>
-              <a class="feed-link" href="./articles/claude-code-vps-residential-ip.html">阅读全文</a>
-            </article>
-          </section>
+          <a class="article-row" href="./articles/claude-code-vps-residential-ip.html">
+            <span class="article-row-title">用 Claude Code 一键配置 VPS + 住宅 IP</span>
+            <time datetime="2026-04-08">Apr 8, 2026</time>
+          </a>
         </section>
       </main>
 
       <footer class="site-footer">
-        <p>© <span id="year"></span> 杜一 · 个人博客。</p>
+        <p>© <span id="year"></span> 杜一</p>
       </footer>
     </div>
 
