@@ -50,7 +50,6 @@ def strip_frontmatter(text: str) -> str:
 
 def rewrite_asset_paths(text: str) -> str:
     replacements = {
-        "/Users/dh/Desktop/illustrations/ai-dialogue-tips/": "../assets/article-media/ai-dialogue-tips/",
         "illustrations/writing-practice/": "../assets/article-media/writing-practice/",
     }
     for source, target in replacements.items():
@@ -88,7 +87,7 @@ def article_html(meta: ArticleMeta, body_html: str) -> str:
             <meta charset="UTF-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             <meta name="description" content="{meta.summary}" />
-            <title>{meta.title} | 杜一的人生实验室</title>
+            <title>{meta.title} | 杜一的个人博客</title>
             <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
             <link rel="stylesheet" href="{CSS_PATH}" />
           </head>
@@ -152,8 +151,8 @@ def index_html() -> str:
           <head>
             <meta charset="UTF-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-            <meta name="description" content="杜一的人生实验室文章库，收录 AI、系统构建、教程与排障文章。" />
-            <title>文章库 | 杜一的人生实验室</title>
+            <meta name="description" content="杜一的个人博客文章库，收录公开发布的文章与实践记录。" />
+            <title>文章库 | 杜一的个人博客</title>
             <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
             <link rel="stylesheet" href="{CSS_PATH}" />
           </head>
@@ -166,16 +165,16 @@ def index_html() -> str:
               <main class="library-layout">
                 <section class="library-hero">
                   <p class="library-kicker">Article Library</p>
-                  <h1>把桌面上的文章，整理成一个可持续更新的网站。</h1>
+                  <h1>文章库</h1>
                   <p>
-                    这里先保留这一篇核心文章，后续如果你继续补 Markdown，再重新生成文章页就行。
+                    这里收录这个博客当前已经公开的文章。
                   </p>
                 </section>
 
                 <section class="library-section">
                   <div class="section-head">
                     <p>当前文章</p>
-                    <h2>先把这一篇上线，后面再逐步扩充。</h2>
+                    <h2>目前公开的一篇文章。</h2>
                   </div>
                   <div class="library-grid">
                     {featured_html}
@@ -184,11 +183,11 @@ def index_html() -> str:
 
                 <section class="library-section">
                   <div class="section-head">
-                    <p>后续更新</p>
-                    <h2>以后新增文章时，只需要补 Markdown，再运行生成脚本。</h2>
+                    <p>说明</p>
+                    <h2>这个页面会随着后续公开文章的增加而更新。</h2>
                   </div>
                   <p class="library-note">
-                    当前这个站点已经收缩为单篇文章版本。等你下一次把新文章发给我，我可以继续帮你补回文章列表、封面图和栏目页。
+                    目前站内收录一篇文章，后续会继续补充新的公开内容。
                   </p>
                 </section>
               </main>

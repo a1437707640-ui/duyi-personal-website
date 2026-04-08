@@ -92,7 +92,7 @@
 <p>图片占位：汇总信息示例</p>
 </blockquote>
 <h2 id="_11">验证</h2>
-<pre><code class="language-bash">curl -x http://127.0.0.1:7897/ https://ipinfo.io/
+<pre><code class="language-bash">curl -x http://127.0.0.1:代理端口/ https://ipinfo.io/
 </code></pre>
 <h2 id="clash-merge-rev-tun">附：Clash Merge Rev TUN 模式</h2>
 <p>点击安装，然后启动即可。</p>
@@ -172,7 +172,7 @@
 </li>
 <li>本地终端环境变量测试
    - 检测本地终端的 Shell 类型
-   - 设置临时代理环境变量：<code>export http_proxy=http://127.0.0.1:端口; export https_proxy=http://127.0.0.1:端口</code>
+   - 设置临时代理环境变量：<code>export http_proxy=http://127.0.0.1:代理端口; export https_proxy=http://127.0.0.1:代理端口</code>
    - 执行 <code>curl -s https://ipinfo.io</code> 验证出口 IP 是否为住宅 IP</li>
 </ol>
 <h3 id="_18">输出格式</h3>
