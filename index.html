@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="杜一的个人博客首页，当前置顶文章：《用 Claude Code 一键配置 VPS + 住宅 IP》。"
+      content="杜一的个人博客，当前文章：《用 Claude Code 一键配置 VPS + 住宅 IP》。"
     />
     <meta name="theme-color" content="#f4f5f7" />
     <title>杜一 | 个人博客</title>
@@ -15,33 +15,20 @@
   <body>
     <div class="site-shell">
       <header class="topbar">
-        <a class="brand" href="#overview">
+        <a class="brand" href="./index.html">
           <span class="brand-mark">D</span>
           <span class="brand-copy">
-            <strong>杜一的人生实验室</strong>
-            <small>Blog · Notes · Experiments</small>
+            <strong>杜一</strong>
+            <small>Personal Blog</small>
           </span>
         </a>
-
-        <label class="search-shell" for="site-search">
-          <span class="search-icon" aria-hidden="true">⌕</span>
-          <input
-            id="site-search"
-            type="search"
-            placeholder="搜索首页内容"
-            aria-label="搜索首页内容"
-          />
-          <button class="search-reset" id="search-reset" type="button" hidden>
-            清空
-          </button>
-        </label>
 
         <div class="topbar-actions">
           <a
             href="https://a1437707640-ui.github.io/duyi-personal-website/"
             target="_blank"
             rel="noreferrer"
-            >在线站点</a
+            >网站</a
           >
           <a
             href="https://github.com/a1437707640-ui/duyi-personal-website"
@@ -52,114 +39,31 @@
         </div>
       </header>
 
-      <div class="workspace">
-        <aside class="sidebar sidebar-left">
-          <section class="panel reveal">
-            <p class="panel-label">博客导航</p>
-            <nav class="side-nav" aria-label="站点导航">
-              <a class="sidebar-link is-active" href="#overview">首页</a>
-              <a class="sidebar-link" href="#writing">置顶文章</a>
-              <a class="sidebar-link" href="#contact">关于与联系</a>
-            </nav>
-          </section>
-
-          <section class="panel reveal">
-            <p class="panel-label">当前标签</p>
-            <ul class="topic-list">
-              <li>
-                <button class="topic-button" data-topic-query="Claude Code" data-scroll-target="#writing" type="button">
-                  <span>Claude Code</span><b>01</b>
-                </button>
-              </li>
-              <li>
-                <button class="topic-button" data-topic-query="VPS" data-scroll-target="#writing" type="button">
-                  <span>VPS</span><b>02</b>
-                </button>
-              </li>
-              <li>
-                <button class="topic-button" data-topic-query="住宅 IP" data-scroll-target="#writing" type="button">
-                  <span>住宅 IP</span><b>03</b>
-                </button>
-              </li>
-              <li>
-                <button class="topic-button" data-topic-query="代理" data-scroll-target="#writing" type="button">
-                  <span>代理搭建</span><b>04</b>
-                </button>
-              </li>
-            </ul>
-          </section>
-
-          <section class="panel reveal">
-            <p class="panel-label">关于这个博客</p>
-            <div class="mini-timeline">
-              <article>
-                <strong>记录什么</strong>
-                <p>记录我正在研究、测试和真正跑通的工具与工作流。</p>
-              </article>
-              <article>
-                <strong>怎么写</strong>
-                <p>尽量只写自己做过、踩过坑、能复现的经验，不写空的结论。</p>
-              </article>
-              <article>
-                <strong>更新方向</strong>
-                <p>会慢慢补 AI 工具、内容系统、代理配置和个人工作方式相关的文章。</p>
-              </article>
-            </div>
-          </section>
-        </aside>
-
-        <main class="main-feed">
+      <main class="workspace workspace-single">
+        <section class="main-feed">
           <section class="panel composer reveal" id="overview">
             <div class="composer-head">
               <div class="avatar avatar-primary">杜</div>
               <div class="composer-copy">
-                <p class="eyebrow">个人博客首页</p>
-                <h1>写我正在研究、测试和真正跑通的东西。</h1>
+                <p class="eyebrow">个人博客</p>
+                <h1>写我真正做过、试过、跑通过的东西。</h1>
                 <p>
-                  我是杜一，关注 AI 工具、内容工作流和个人系统搭建。这里会持续更新我觉得真正有用、也愿意公开分享的实践记录。
+                  我是杜一，关注 AI 工具、内容工作流和个人系统搭建。这里先保留一篇文章，以后再慢慢增加。
                 </p>
               </div>
             </div>
-
-            <div class="composer-toolbar">
-              <button class="toolbar-pill" data-quick-query="Claude Code" data-scroll-target="#writing" type="button">
-                Claude Code
-              </button>
-              <button class="toolbar-pill" data-quick-query="VPS" data-scroll-target="#writing" type="button">
-                VPS
-              </button>
-              <button class="toolbar-pill" data-quick-query="住宅 IP" data-scroll-target="#writing" type="button">
-                住宅 IP
-              </button>
-              <a class="toolbar-pill toolbar-link" href="./articles/index.html">
-                进入文章库
-              </a>
-            </div>
-          </section>
-
-          <section class="panel filter-bar reveal">
-            <button class="filter-chip is-active" data-filter-button data-filter="all" type="button">
-              最新
-            </button>
-            <button class="filter-chip" data-filter-button data-filter="featured" type="button">
-              置顶
-            </button>
-            <button class="filter-chip" data-filter-button data-filter="article" type="button">
-              文章
-            </button>
           </section>
 
           <section class="feed-group reveal" id="writing">
             <div class="group-heading">
-              <p class="panel-label">置顶文章</p>
-              <h2>如果你第一次来，建议先从这篇开始。</h2>
+              <p class="panel-label">文章</p>
+              <h2>《用 Claude Code 一键配置 VPS + 住宅 IP》</h2>
             </div>
 
             <article class="panel feed-card" data-track="featured article">
               <div class="feed-meta">
                 <span class="feed-type">站内文章</span>
                 <span>2026 / 04</span>
-                <span>置顶</span>
               </div>
               <h3>用 Claude Code 一键配置 VPS + 住宅 IP</h3>
               <p>
@@ -168,84 +72,8 @@
               <a class="feed-link" href="./articles/claude-code-vps-residential-ip.html">阅读全文</a>
             </article>
           </section>
-        </main>
-
-        <aside class="sidebar sidebar-right">
-          <section class="panel profile-card reveal">
-            <div class="profile-cover">
-              <div class="cover-glow"></div>
-              <div class="cover-avatar">杜一</div>
-            </div>
-
-            <div class="profile-body">
-              <p class="profile-meta">作者一句话</p>
-              <h2>杜一</h2>
-              <p class="profile-summary">
-                关注 AI 工具、内容工作流和个人系统搭建，喜欢把真正跑通的经验整理成别人也能直接上手的文章。
-              </p>
-
-              <div class="profile-tags">
-                <span>AI 工具</span>
-                <span>内容系统</span>
-                <span>个人博客</span>
-                <span>实操记录</span>
-              </div>
-            </div>
-          </section>
-
-          <section class="panel stats-card reveal">
-            <p class="panel-label">这个博客</p>
-            <div class="stats-grid">
-              <article>
-                <strong>实操</strong>
-                <span>优先记录做过的事</span>
-              </article>
-              <article>
-                <strong>少而精</strong>
-                <span>慢慢更新，不急着堆量</span>
-              </article>
-              <article>
-                <strong>长期</strong>
-                <span>持续沉淀可复用经验</span>
-              </article>
-              <article>
-                <strong>公开</strong>
-                <span>写给真正会用的人看</span>
-              </article>
-            </div>
-          </section>
-
-          <section class="panel values-card reveal">
-            <p class="panel-label">我在意什么</p>
-            <div class="value-item">
-              <strong>有用</strong>
-              <p>比起观点本身，我更在意一篇内容能不能帮人少走弯路，或者更快上手。</p>
-            </div>
-            <div class="value-item">
-              <strong>真实</strong>
-              <p>我更愿意写真实实践、真实问题和真实代价，而不是只写看起来正确的话。</p>
-            </div>
-            <div class="value-item">
-              <strong>系统感</strong>
-              <p>我关注的不只是某个工具，而是工具如何被放进一套真正可工作的系统里。</p>
-            </div>
-          </section>
-
-          <section class="panel links-card reveal" id="contact">
-            <p class="panel-label">关于与联系</p>
-            <a href="./articles/index.html">站内文章库</a>
-            <a
-              href="https://a1437707640-ui.github.io/duyi-personal-website/"
-              target="_blank"
-              rel="noreferrer"
-              >网站在线地址</a
-            >
-            <a href="https://github.com/a1437707640-ui/duyi-personal-website" target="_blank" rel="noreferrer"
-              >GitHub 仓库</a
-            >
-          </section>
-        </aside>
-      </div>
+        </section>
+      </main>
 
       <footer class="site-footer">
         <p>© <span id="year"></span> 杜一 · 个人博客。</p>

@@ -95,7 +95,6 @@ def article_html(meta: ArticleMeta, body_html: str) -> str:
             <div class="article-shell">
               <header class="article-topbar">
                 <a href="../index.html" class="back-link">返回首页</a>
-                <a href="./index.html" class="back-link">文章库</a>
               </header>
 
               <main class="article-layout">
@@ -119,85 +118,6 @@ def article_html(meta: ArticleMeta, body_html: str) -> str:
     )
 
 
-def index_html() -> str:
-    featured_cards = []
-    archive_cards = []
-
-    for meta in ARTICLES:
-        card = textwrap.dedent(
-            f"""\
-            <a class="library-card" href="./{meta.slug}.html">
-              <div class="library-meta">
-                <span>{meta.category}</span>
-                <span>{meta.date}</span>
-                <span>{meta.reading_time}</span>
-              </div>
-              <h2>{meta.title}</h2>
-              <p>{meta.summary}</p>
-            </a>
-            """
-        )
-        if meta.featured:
-            featured_cards.append(card)
-        archive_cards.append(card)
-
-    featured_html = "\n".join(featured_cards)
-    archive_html = "\n".join(archive_cards)
-
-    return textwrap.dedent(
-        f"""\
-        <!DOCTYPE html>
-        <html lang="zh-CN">
-          <head>
-            <meta charset="UTF-8" />
-            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-            <meta name="description" content="杜一的个人博客文章库，收录公开发布的文章与实践记录。" />
-            <title>文章库 | 杜一的个人博客</title>
-            <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
-            <link rel="stylesheet" href="{CSS_PATH}" />
-          </head>
-          <body>
-            <div class="article-shell">
-              <header class="article-topbar">
-                <a href="../index.html" class="back-link">返回首页</a>
-              </header>
-
-              <main class="library-layout">
-                <section class="library-hero">
-                  <p class="library-kicker">Article Library</p>
-                  <h1>文章库</h1>
-                  <p>
-                    这里收录这个博客当前已经公开的文章。
-                  </p>
-                </section>
-
-                <section class="library-section">
-                  <div class="section-head">
-                    <p>当前文章</p>
-                    <h2>目前公开的一篇文章。</h2>
-                  </div>
-                  <div class="library-grid">
-                    {featured_html}
-                  </div>
-                </section>
-
-                <section class="library-section">
-                  <div class="section-head">
-                    <p>说明</p>
-                    <h2>这个页面会随着后续公开文章的增加而更新。</h2>
-                  </div>
-                  <p class="library-note">
-                    目前站内收录一篇文章，后续会继续补充新的公开内容。
-                  </p>
-                </section>
-              </main>
-            </div>
-          </body>
-        </html>
-        """
-    )
-
-
 def main() -> None:
     ARTICLES_DIR.mkdir(exist_ok=True)
 
@@ -206,8 +126,6 @@ def main() -> None:
         body_html = render_markdown(source_path.read_text(encoding="utf-8"))
         target_path = ARTICLES_DIR / f"{meta.slug}.html"
         target_path.write_text(article_html(meta, body_html), encoding="utf-8")
-
-    (ARTICLES_DIR / "index.html").write_text(index_html(), encoding="utf-8")
 
 
 if __name__ == "__main__":
