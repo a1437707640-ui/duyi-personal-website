@@ -365,6 +365,9 @@ p {
 }
 
 .toolbar-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   padding: 0.65rem 0.9rem;
   border: 0;
   border-radius: 999px;
@@ -373,6 +376,7 @@ p {
   cursor: pointer;
   font: inherit;
   font-weight: 700;
+  text-decoration: none;
   transition: background-color 180ms ease, color 180ms ease, transform 180ms ease;
 }
 
