@@ -11,7 +11,7 @@ const quickQueryButtons = [...document.querySelectorAll("[data-quick-query]")];
 const searchInput = document.querySelector("#site-search");
 const searchReset = document.querySelector("#search-reset");
 const sections = [...document.querySelectorAll("[id]")].filter((node) =>
-  ["overview", "experience", "projects", "writing", "contact"].includes(node.id)
+  ["overview", "writing", "contact"].includes(node.id)
 );
 let activeFilter = "all";
 let activeQuery = "";
